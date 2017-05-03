@@ -4,9 +4,19 @@
 
 
 
+<h1>Enter New Thing!!</h1>
+  <%= simple_form_for @stuff do |f| %>
+    <%= f.input :thing %>
+    <%= f.submit 'Create' %>
+  <% end %>
+
+
+
+<h2>Print out of the Database!!</h2>
 <% @stuffs.each do |stuff| %>
   <div>
     <h1><%= stuff.thing %></h1><br />
+   
 
   </div>
 
